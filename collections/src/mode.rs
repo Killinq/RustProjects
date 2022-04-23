@@ -1,12 +1,6 @@
 use std::collections::HashMap;
 use std::io;
-
-fn main() {
-    let mut vec: Vec<i32> = Vec::new();
-    add(&mut vec);
-}
-
-fn add(v: &mut Vec<i32>) {
+pub fn add(v: &mut Vec<i32>) {
     let mut insert = String::new(); // hold the input
     loop {
         println!("Type a number or `done`: ");
